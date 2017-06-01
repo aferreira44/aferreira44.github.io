@@ -1,10 +1,10 @@
 nav:
   Home: /
-  About: /about/
-  Writing: /archives/
-  Projects: http://github.com/probberechts
+  Sobre Mim: /sobre-mim/
+  Artigos: /artigos/
+  Projetos: http://github.com/aferreira44
 
-projects_url: http://github.com/probberechts
+projects_url: http://github.com/aferreira44
 
 customize:
     gravatar:
@@ -27,9 +27,9 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/probberechts/cactus-dark
-        twitter: /
-        facebook: /
+        github: https://github.com/aferreira44
+        twitter: https://twitter.com/aferreira44
+        facebook: https://facebook.com/aferreira44
         linkedin: /
     show_all_posts: false
     post_count: 5

@@ -3,25 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: André Ferreira
 subtitle:
 description:
-author: John Doe
-language:
-timezone:
+author: André Ferreira
+language: pt
+timezone: America/Sao_Paulo
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.andreferreira.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
-source_dir: source
-public_dir: public
+source_dir: data
+public_dir: dist
 tag_dir: tags
-archive_dir: archives
+archive_dir: artigos
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -32,7 +32,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
-filename_case: 0
+filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
@@ -52,7 +52,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: DD/MM/YYYY
 time_format: HH:mm:ss
 
 # Pagination
@@ -70,4 +70,4 @@ theme: cactus-dark
 deploy:
   type: git
   branch: master
-  repo: https://github.com/aferreira44/aferreira44.github.io
+  repo: https://github.com/aferreira44/andreferreira.me

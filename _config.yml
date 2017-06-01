@@ -70,4 +70,4 @@ theme: cactus-dark
 deploy:
   type: git
   branch: master
-  repo: https://github.com/aferreira44/andreferreira.me
+  repo: https://github.com/aferreira44/aferreira44.github.io

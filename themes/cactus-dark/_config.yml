@@ -40,7 +40,7 @@ rss: false
 
 # Plugins
 plugins:
-    disqus_shortname: andreferreira.me
+    disqus_shortname: andreferreirame
     google_analytics: UA-49658133-1
 
 # Miscellaneous

@@ -11,9 +11,7 @@ Vamos lá!
 
 ## Instalação do Hexo.io
 
-Para criar um blog com o Hexo.io, vamos precisar ter o Node.js, NPM e o Git instalados em nosso computador.
-
-Depois de instaladas as ferramentas necessárias, vamos instalar globalmente o Hexo com o seguinte comando:
+Para criar um blog com o Hexo.io, vamos precisar ter o Node.js, NPM e o Git instalados em nosso computador. Agora, vamos instalar globalmente o Hexo com o comando:
 
 `npm install -g hexo-cli`
 
@@ -21,9 +19,7 @@ Depois de instaladas as ferramentas necessárias, vamos instalar globalmente o H
 
 Vamos criar o nosso projeto com o comando: `hexo init blog-pessoal`.
 
-Acesse a pasta `blog-pessoal` criada: `cd blog-pessoal`.
-
-E depois, execute `npm install` para o NPM instalar as dependências do nosso projeto.
+Acesse a pasta `blog-pessoal` criada: `cd blog-pessoal` e execute `npm install` para o NPM instalar as dependências do nosso projeto.
 
 ## Estrutura de pastas e arquivos
 

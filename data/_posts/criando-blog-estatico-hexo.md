@@ -38,6 +38,8 @@ Aqui, darei uma breve explicação sobre as pastas e arquivos criados em nosso p
 
 Vamos agora modificar algumas configurações básicas de nosso projeto. Para isso, abra o arquivo `_config.yml` em seu editor de texto e altere as configurações das seções `# Site` e `# URL` conforme detalhado abaixo:
 
+### # Site
+
 | Configuração | Descrição |
 | ------------ | --------- |
 | title | O título do seu site |
@@ -46,6 +48,8 @@ Vamos agora modificar algumas configurações básicas de nosso projeto. Para is
 | author | Seu nome |
 | language | O idioma do seu site. Utilizando o padrão de duas letras do código [ISO-639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). O padrão do Hexo é `en` para inglês. Para português, utilize `pt`. |
 | timezone | O fuso horário do seu site. O Hexo utiliza a configuração do seu computador por padrão. Você pode encontrar a lista com os fusos horários disponíveis [aqui](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). |
+
+### # URL
 
 | Configuração | Descrição | Padrão |
 | ------------ | --------- | ------ |

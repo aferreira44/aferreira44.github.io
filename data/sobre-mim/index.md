@@ -1,9 +1,9 @@
 ---
-title: sobre-mim
+title: Sobre mim
 date: 2017-06-01 18:11:09
 ---
 
-André Ferreira, 27 anos, morando atualmente em Curitiba / PR. Formado em Comunicação Social – Publicidade, Propaganda e Marketing, atuei por 4 anos em agências de comunicação no planejamento e execução de campanhas de mídias sociais, links patrocinados e SEO para empresas nacionais e multinacionais. Também possuo certificação em Google Analytics pelo Google Partners desde 2014.
+André Ferreira, 28 anos, morando atualmente em Curitiba / PR. Formado em Comunicação Social – Publicidade, Propaganda e Marketing, atuei por 4 anos em agências de comunicação no planejamento e execução de campanhas de mídias sociais, links patrocinados e SEO para empresas nacionais e multinacionais. Também possuo certificação em Google Analytics pelo Google Partners desde 2014.
 
 Neste período cresceu o meu interesse por tecnologias de desenvolvimento, o que me levou a realizar o curso de Tecnologia em Sistemas para Internet para aprimorar os meus conhecimentos nesta área.
 

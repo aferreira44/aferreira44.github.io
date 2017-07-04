@@ -6,9 +6,7 @@
       <%- partial('_partial/post/actions_desktop') %>
     <% } %>
     <div class="content index width mx-auto px2 my4">
-        <% if (!is_post()) { %>
-          <%- partial('_partial/header') %>
-        <% } %>
+        <%- partial('_partial/header') %>
         <%- body %>
     </div>
     <% if (is_post()) { %>

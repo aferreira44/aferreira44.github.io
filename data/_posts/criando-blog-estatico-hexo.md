@@ -7,6 +7,7 @@ date: 2017-06-12 03:06:55
 Você já pensou em criar um blog e acabou desistindo ao perceber o trabalho que daria manter um site hospedado com Wordpress, por exemplo?
 
 Hoje vou lhe apresentar o [Hexo.io](https://hexo.io/), uma ferramenta simples e poderosa para criar um blog estático, como este que você está lendo agora.
+<!-- more -->
 
 Vamos lá!
 

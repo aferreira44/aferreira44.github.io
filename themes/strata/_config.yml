@@ -1,0 +1,23 @@
+title: André Ferreira | Full Stack Developer
+description:
+
+# Plugins
+plugins:
+    disqus_shortname: andreferreirame
+    google_analytics: UA-49658133-1
+
+nav:
+  Home: /
+  Sobre Mim: /sobre-mim/
+  Artigos: /artigos/
+  Projetos: http://github.com/aferreira44
+
+customize:
+  show_all_posts: true
+  post_count: 5
+  social_links:
+    github: https://github.com/aferreira44
+    twitter: https://twitter.com/aferreira44
+    facebook: https://facebook.com/aferreira44
+    instagram: https://www.instagram.com/aferreira44/
+    linkedin: https://www.linkedin.com/in/aferreira44/

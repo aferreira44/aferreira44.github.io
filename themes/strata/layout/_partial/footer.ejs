@@ -1,13 +1,36 @@
 <footer id="footer">
     <div class="inner">
+    <% if (theme.customize.social_links) { %>
         <ul class="icons">
-            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            <% for(var i in theme.customize.social_links) { %>
+                <li><a class="icon fa-<%= i %>" href="<%- url_for(theme.customize.social_links[i]) %>"></a></li>
+            <% } %>
         </ul>
+    <% } %>
+        <nav>
+            <ul class="copyright">
+                <% for (var i in theme.nav) { %> 
+                    <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a></li>
+                <% } %>
+            </ul>
+        </nav>
         <ul class="copyright">
-            <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
         </ul>
     </div>
+</footer>
+
+<footer id="footer">
+  <div class="footer-left">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <%= new Date().getFullYear() %> <%= config.author || config.title %>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <% for (var i in theme.nav) { %> 
+          <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
 </footer>

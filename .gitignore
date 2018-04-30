@@ -3,3 +3,4 @@ node_modules/
 dist/
 .deploy_git/
 db.json
+themes/strata/html/*

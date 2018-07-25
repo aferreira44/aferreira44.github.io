@@ -131,3 +131,30 @@ Do you often work on Saturdays?
 My friends sometimes read newspapers.
 This plane lands in Frankfurt every weekend.
 Every weekend this plane lands in Frankfurt.
+
+## Exceções: (s/-es)
+*Esta regra se aplica apenas a verbos após he, she, it e nomes que eles substituem!*
+
+### Caso 1
+
+*Verbos terminados em -о, -ch,-sh,-x, -s, -z, -tch, adicionam -es*
+
+go - goes
+wash - washes
+catch - catches
+relax - relaxes
+pass - passes
+
+- John does an exercise. (John faz um exercício)
+
+### Caso 2
+
+*Se um verbo terminar em vogal + -y, o -у não é substituído por -ie, mas acrescenta-se -s*
+
+say - says
+buy - buys
+destroy - destroys
+obey - obeys
+
+
+- She buys bread every day. (Ela compra pão todos os dias.)

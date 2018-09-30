@@ -1,4 +1,0 @@
----
-title: albert-einstein
-tags:
----

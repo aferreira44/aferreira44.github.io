@@ -4,7 +4,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
@@ -13,6 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-emotion`,
     },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: "GTM-N3Q4DJ",

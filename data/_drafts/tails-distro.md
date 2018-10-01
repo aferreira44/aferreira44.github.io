@@ -1,4 +1,0 @@
----
-title: Tails Distro
-tags:
----

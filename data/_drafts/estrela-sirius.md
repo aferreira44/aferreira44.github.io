@@ -1,4 +1,0 @@
----
-title: estrela-sirius
-tags:
----

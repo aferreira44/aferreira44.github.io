@@ -1,4 +1,0 @@
----
-title: mecanica-quantica
-tags:
----

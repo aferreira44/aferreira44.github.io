@@ -1,5 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://andreferreira.me`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -7,6 +11,8 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-emotion`,
+    },
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: "GTM-N3Q4DJ",

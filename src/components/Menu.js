@@ -4,34 +4,43 @@ import { Link } from 'gatsby'
 export default () => (
   <div css={`
     & nav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+      width: 100%;
       overflow: hidden;
     }
 
-    & li {
-      float: left;
+    & ul {
+      margin: 0;
+      padding: 20px 10px;
+      text-align: center;
+      list-style-type: none;
     }
 
-    & li a {
-      display: block;
-      text-align: center;
-      padding: 8px 10px;
-      text-decoration: none;
+    & li {
+      display: inline;
+      padding: 8px;
     }
 
     & li a:hover {
-      background-color: #111;
+      color: #000;
+      background-image: none;
     }
+    
+    // @media screen and (max-width: 600px) {
+      // nav { background-color: #000; }
+      // nav li:not(:first-child) {display: none;}
+    // }
+  }
   `}>
     <nav>
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/about'>About</Link></li>
-      <li><Link to='/blog'>Blog</Link></li>
-      <li><Link to='/projects'>Projects</Link></li>
-      <li><Link to='/talks'>Talks</Link></li>
-      <li><Link to='/contact'>Contact</Link></li>
+      <ul>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/blog'>Blog</Link></li>
+        {/* <li><Link to='/projects'>Projects</Link></li> */}
+        {/* <li><Link to='/talks'>Talks</Link></li> */}
+        {/* <li><Link to='/art'>Art</Link></li> */}
+        <li><Link to='/contact'>Contact</Link></li>
+      </ul>
     </nav>
   </div>
 )

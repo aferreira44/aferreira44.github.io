@@ -4,7 +4,6 @@ import Menu from '../components/Menu'
 
 export default ({ children }) => (
   <div css={`
-    width: 650px;
     max-width: 600px;
     margin: 0 auto;
   `}>

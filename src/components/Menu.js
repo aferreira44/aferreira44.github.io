@@ -5,6 +5,7 @@ export default () => (
   <div css={`
     & nav {
       width: 100%;
+      padding: 30px;
       overflow: hidden;
     }
 

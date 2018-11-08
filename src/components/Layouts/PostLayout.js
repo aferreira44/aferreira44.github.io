@@ -1,14 +1,25 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import Layout from "../Layouts/Layout"
+import { rhythm } from '../../utils/typography'
+
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <Layout>
-      <div>{post.frontmatter.slug}</div>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </Layout>
+    <div css={`
+      & .timeToRead {
+        font-size: ${rhythm(0.65)};
+        font-weight: bold;
+      }
+    `}>
+      <Layout>
+        <h1>{post.frontmatter.title}</h1>
+        <p><span>Published on {post.frontmatter.date}</span> - <span className="timeToRead">Time to read: {post.timeToRead} min.</span></p>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <hr />
+      </Layout>
+    </div>
   )
 }
 
@@ -18,7 +29,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD/MM/YYYY")
       }
+      timeToRead
     }
   }
 `

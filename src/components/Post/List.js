@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
+import { rhythm } from '../../utils/typography'
 
 export default () => (
   <StaticQuery
@@ -11,7 +12,8 @@ export default () => (
               id
               frontmatter {
                 title
-                path
+                date(formatString: "DD/MM/YYYY")
+                slug
               }
               timeToRead
               excerpt
@@ -22,17 +24,21 @@ export default () => (
     `}
     render={data => (
       <div css={`
-        & .timeToRead{
-          display: block;
-          font-style: italic;
+        & hr {
+          margin: 30px 0;
+        }
+
+        & .timeToRead {
+          font-size: ${rhythm(0.65)};
           font-weight: bold;
         }
       `}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
-            <h4><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></h4>
-            <span className="timeToRead">Time to read: {node.timeToRead} min.</span>
+            <h4><Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link></h4>
+            <p><span>Published on {node.frontmatter.date}</span> - <span className="timeToRead">Time to read: {node.timeToRead} min.</span></p>
             <span>{node.excerpt}</span>
+            <hr />
           </div>
         ))}
       </div>

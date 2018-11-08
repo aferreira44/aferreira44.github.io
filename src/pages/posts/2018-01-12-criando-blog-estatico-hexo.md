@@ -1,5 +1,5 @@
 ---
-path: "/blog/criando-blog-estatico-com-hexo"
+slug: "/blog/criando-blog-estatico-com-hexo"
 date: "2017-12-23T17:00:00.123Z"
 title: Criando um blog estático com Hexo.io
 description: "Descrição para SEO"

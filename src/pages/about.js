@@ -1,6 +1,6 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import PageLayout from "../layouts/PageLayout"
+import PageLayout from "../components/Layouts/PageLayout"
 
 export default () => (
   <PageLayout>

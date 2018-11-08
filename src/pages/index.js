@@ -1,17 +1,39 @@
 import React from 'react'
-import HomeLayout from "../layouts/HomeLayout"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { graphql } from 'gatsby'
+import HomeLayout from "../components/Layouts/HomeLayout"
+import PostList from "../components/Post/List"
 
-export default () => (
-  <HomeLayout>
-    <h1>André Ferreira</h1>
-    <h2>Full Stack Developer</h2>
-    <h4>Programming, Blockchain and more</h4>
-    <FontAwesomeIcon icon={faGithub} />
-    <FontAwesomeIcon icon={faTwitter} />
-    <FontAwesomeIcon icon={faFacebook} />
-    <FontAwesomeIcon icon={faInstagram} />
-    <FontAwesomeIcon icon={faLinkedin} />
-  </HomeLayout>
+export default ({ data }) => (
+  <div css={`
+    & .title, .description, .heading {
+      text-align: center;
+    }
+
+    & .title {
+      margin: 0 0 30px 0;
+    }
+  }
+  `}>
+    <HomeLayout>
+      <h1 className="title">{data.site.siteMetadata.title}</h1>
+      <p className="description">{data.site.siteMetadata.description}</p>
+      <hr />
+      <section>
+        <h3 className="heading">Latest Posts</h3>
+        <PostList />
+      </section>
+    </HomeLayout>
+  </div>
 )
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        subtitle
+        description
+      }
+    }
+  }
+`

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import Menu from '../components/Menu'
+import Menu from '../UI/Menu'
+import Footer from '../UI/Footer'
 
 export default ({ children }) => (
   <div css={`
@@ -14,5 +15,6 @@ export default ({ children }) => (
     </Helmet>
     <Menu />
     {children}
+    <Footer />
   </div>
 )

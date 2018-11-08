@@ -1,6 +1,6 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import Layout from "../layouts/Layout"
+import Layout from "../Layouts/Layout"
 
 export default ({ children }) => (
   <Layout>

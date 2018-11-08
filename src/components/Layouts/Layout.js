@@ -1,10 +1,11 @@
 import React from 'react'
 import {Helmet} from "react-helmet";
-import Menu from '../components/Menu'
+import Menu from '../UI/Menu'
+import Footer from '../UI/Footer'
+import Header from '../UI/Header'
 
 export default ({ children }) => (
   <div css={`
-    width: 650px;
     max-width: 600px;
     margin: 0 auto;
   `}>
@@ -14,6 +15,8 @@ export default ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Helmet>
     <Menu />
+    <Header />
     {children}
+    <Footer />
   </div>
 )

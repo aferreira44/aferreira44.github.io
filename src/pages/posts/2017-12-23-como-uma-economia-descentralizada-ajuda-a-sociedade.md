@@ -1,6 +1,6 @@
 ---
 slug: "/blog/como-uma-economia-descentralizada-ajuda-a-sociedade"
-date: "2017-12-23T17:00:00.123Z"
+date: "2017-12-23"
 title: "Como uma economia descentralizada ajuda a sociedade"
 description: "Descrição para SEO"
 ---

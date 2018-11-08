@@ -1,6 +1,6 @@
 ---
 slug: "/blog/criando-blog-estatico-com-hexo"
-date: "2017-12-23T17:00:00.123Z"
+date: "2018-01-12"
 title: Criando um blog estático com Hexo.io
 description: "Descrição para SEO"
 ---

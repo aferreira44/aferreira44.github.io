@@ -1,12 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter, faFacebook, faInstagram, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons'
 
 export default () => (
   <div css={`
     & footer {
       padding: 30px;
       text-align: center;
+    }
+
+    & p {
+      margin: 0;
     }
 
     & ul {
@@ -30,9 +34,11 @@ export default () => (
     }
   `}>
     <footer>
+      <p>STAY CONNECTED</p>
       <nav>
         <ul>
           <li><a href="https://github.com/aferreira44" target="blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></li>
+          <li><a href="https://medium.com/@aferreira44" target="blank"><FontAwesomeIcon icon={faMedium} size="2x" /></a></li>
           <li><a href="https://twitter.com/aferreira44" target="blank"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
           <li><a href="https://facebook.com/aferreira44" target="blank"><FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
           <li><a href="https://instagram.com/aferreira44" target="blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>

@@ -5,21 +5,21 @@ import PostList from "../components/Post/List"
 
 export default ({ data }) => (
   <div css={`
-    & h1, h3, p {
+    & .title, .description, .heading {
       text-align: center;
     }
 
-    & h1 {
+    & .title {
       margin: 0 0 30px 0;
     }
   }
   `}>
     <HomeLayout>
-      <h1>{data.site.siteMetadata.title}</h1>
-      <p>{data.site.siteMetadata.description}</p>
+      <h1 className="title">{data.site.siteMetadata.title}</h1>
+      <p className="description">{data.site.siteMetadata.description}</p>
       <hr />
       <section>
-        <h3>Latest Posts</h3>
+        <h3 className="heading">Latest Posts</h3>
         <PostList />
       </section>
     </HomeLayout>

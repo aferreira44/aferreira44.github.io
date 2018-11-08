@@ -2,6 +2,7 @@ import React from 'react'
 import {Helmet} from "react-helmet";
 import Menu from '../UI/Menu'
 import Footer from '../UI/Footer'
+import Header from '../UI/Header'
 
 export default ({ children }) => (
   <div css={`
@@ -14,6 +15,7 @@ export default ({ children }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Helmet>
     <Menu />
+    <Header />
     {children}
     <Footer />
   </div>

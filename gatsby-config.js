@@ -24,23 +24,9 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        color: 'tomato',
-        showSpinner: true,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/utils/typography',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-N3Q4DJ',
-        includeInDevelopment: false,
       },
     },
   ],

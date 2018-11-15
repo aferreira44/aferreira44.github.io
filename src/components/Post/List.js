@@ -14,7 +14,7 @@ export default () => (
               id
               frontmatter {
                 title
-                date(formatString: "DD/MM/YYYY")
+                date(formatString: "MMM DD, YYYY")
                 slug
               }
               timeToRead
@@ -44,7 +44,7 @@ export default () => (
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <h4><Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link></h4>
-            <p><span>Published on {node.frontmatter.date}</span> - <span className="timeToRead">Time to read: {node.timeToRead} min.</span></p>
+            <p><span>{node.frontmatter.date}</span> - <span className="timeToRead">{node.timeToRead} min read</span></p>
             <span>{node.excerpt}</span>
             <hr />
           </div>

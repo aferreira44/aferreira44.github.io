@@ -4790,21 +4790,6 @@ gatsby-plugin-emotion@^2.0.5:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-google-tagmanager@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.0.5.tgz#391eeb14b0f0445a8dc8cb9ae30a7bc25dbc70bc"
-  integrity sha512-fNx1h6dLvJXKsDVn7l/AWMyP2OVdqUcxvkFSbr4yCyXOQI0WZ7A2GmEvPTsITXyeaOOJL1t9ezhUKNB20x0FWg==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-
-gatsby-plugin-nprogress@^2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.0.6.tgz#e6ae9b9de9d0652c8313ff747b070e025c308010"
-  integrity sha512-zPpiPs4QHehWmVlEd4fiw4n+2Vnx3qP1DcBR8X8KOzcmNPlR08l/wR2nOoH7shXbYUbeB2qhN4qfDWmdTFxKqg==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    nprogress "^0.2.0"
-
 gatsby-plugin-page-creator@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.2.tgz#67d18fc4eca10eb12acb5b401e292e092e1df776"
@@ -7551,11 +7536,6 @@ npmlog@^4.0.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
-
-nprogress@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
-  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.1, nth-check@~1.0.1:
   version "1.0.1"

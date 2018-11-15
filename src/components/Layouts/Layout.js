@@ -8,7 +8,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     /* Google Tag Manager */
-    if (!['localhost', 's3', 'cloudfront'].includes(window.location.hostname)) { // TODO: Use env variables for this
+    if (!['localhost', 's3', 'cloudfront'].some((e) => { return window.location.hostname.includes(e) })) {
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=

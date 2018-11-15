@@ -20,7 +20,6 @@ class Layout extends React.Component {
 
       noscript.appendChild(iframe);
 
-      iframe.setAttribute("title", "GoogleTagManager");
       iframe.setAttribute("src", "https://www.googletagmanager.com/ns.html?id=GTM-N3Q4DJ");
       iframe.setAttribute("height", "0");
       iframe.setAttribute("width", "0");
@@ -43,6 +42,7 @@ class Layout extends React.Component {
         <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="Uvks456skSsvBaBg4pM4V_ZvGivMNvpPbtgKcuWWL-E" />
       </Helmet>
       <Menu />
       <Header />

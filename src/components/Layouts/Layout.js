@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet";
 import Menu from '../UI/Menu'
 import Footer from '../UI/Footer'
 import Header from '../UI/Header'
+import '../../sass/index.scss'
 
 class Layout extends React.Component {
 
@@ -34,21 +35,20 @@ class Layout extends React.Component {
     const { children } = this.props;
 
     return (
-      <div css={`
-      max-width: 600px;
-      margin: 0 auto;
-    `}>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="Uvks456skSsvBaBg4pM4V_ZvGivMNvpPbtgKcuWWL-E" />
-      </Helmet>
-      <Menu />
-      <Header />
-      { children }
+      <section class="section">
+      <div className="container">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="google-site-verification" content="Uvks456skSsvBaBg4pM4V_ZvGivMNvpPbtgKcuWWL-E" />
+        </Helmet>
+        <Menu />
+        <Header />
+        { children }
       <Footer />
-    </div>
+      </div>
+      </section>
     )
   }
 }

@@ -14,17 +14,9 @@ export default () => (
       }
     `}
     render={data => (
-      <div css={`
-        & .title, .description {
-          text-align: center;
-        }
-    
-        & .title {
-          margin: 0 0 30px 0;
-        }
-      `}>
-        <h1 className="title">{data.site.siteMetadata.title}</h1>
-        <p className="description">{data.site.siteMetadata.description}</p>
+      <div>
+        <h1 className="is-size-1 is-size-2-mobile has-text-centered has-text-weight-semibold">{data.site.siteMetadata.title}</h1>
+        <p className="is-size-5 is-size-6-mobile has-text-centered">{data.site.siteMetadata.description}</p>
         <hr />
       </div>
     )}

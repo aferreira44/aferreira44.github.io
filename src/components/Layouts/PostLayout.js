@@ -1,15 +1,13 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import Layout from "../Layouts/Layout"
-import { rhythm } from '../../utils/typography'
-
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div css={`
       & .timeToRead {
-        font-size: ${rhythm(0.65)};
+        font-size: 10px;
         font-weight: bold;
       }
     `}>

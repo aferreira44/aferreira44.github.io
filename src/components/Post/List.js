@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, StaticQuery, Link } from 'gatsby'
-import { rhythm } from '../../utils/typography'
 
 export default () => (
   <StaticQuery
@@ -35,7 +34,7 @@ export default () => (
         }
 
         & .timeToRead {
-          font-size: ${rhythm(0.65)};
+          font-size: 10px;
           font-weight: bold;
         }
       `}>

@@ -6,6 +6,7 @@ module.exports = {
     description: 'Programming, DevOps, Blockchain, AI and Machine Learning, Startups, Open Source, GNU/Linux, Privacy and Freedom'
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-plugin-emotion',
@@ -22,12 +23,6 @@ module.exports = {
       options: {
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
-    },
+    }
   ],
 }

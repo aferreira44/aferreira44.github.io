@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
+import Typography from '@material-ui/core/Typography';
 
 export default () => (
   <StaticQuery
@@ -18,13 +19,17 @@ export default () => (
         & .title, .description {
           text-align: center;
         }
-    
+
         & .title {
           margin: 0 0 30px 0;
         }
       `}>
-        <h1 className="title">{data.site.siteMetadata.title}</h1>
-        <p className="description">{data.site.siteMetadata.description}</p>
+        <Typography variant="h3" component="h1" align="center">
+          {data.site.siteMetadata.title}
+        </Typography>
+        <Typography variant="subtitle1" align="center">
+          {data.site.siteMetadata.description}
+        </Typography>
         <hr />
       </div>
     )}

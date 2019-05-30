@@ -1,10 +1,24 @@
 import React from 'react'
-import { graphql, StaticQuery, Link } from 'gatsby'
-import { rhythm } from '../../utils/typography'
+import PropTypes from 'prop-types';
+import { graphql, StaticQuery, Link as GatsbyLink } from 'gatsby'
+import { withStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent'
+import Typography from '@material-ui/core/Typography';
 
-export default () => (
-  <StaticQuery
-    query={graphql`
+const styles = {
+  card: {
+    maxWidth: 345,
+  }
+};
+
+function List(props) {
+  const { classes } = props;
+
+  return (
+    <StaticQuery
+      query={graphql`
       query {
         allMarkdownRemark (
           sort: {fields: [frontmatter___date], order: DESC},
@@ -24,33 +38,35 @@ export default () => (
         }
       }
     `}
-    render={data => (
-      <div css={`
-        & hr {
-          margin: 30px 0;
-        }
+      render={data => (
+        <section>
+          <Typography gutterBottom align="center" variant="h4" component="h2">Latest Posts</Typography>
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <Card className={classes.card}>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h3">
+                    <Link component={GatsbyLink} variant="headline" to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
+                  </Typography>
+                  <Typography gutterBottom variant="button">
+                    {node.frontmatter.date} - {node.timeToRead} min read
+                    </Typography>
+                  <Typography component="p">
+                    {node.excerpt}
+                  </Typography>
+                </CardContent>
+              </Card>
+              <br />
+            </div>
+          ))}
+        </section>
+      )}
+    />
+  )
+}
 
-        & .heading {
-          text-align: center;
-        }
+List.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
-        & .timeToRead {
-          font-size: ${rhythm(0.65)};
-          font-weight: bold;
-        }
-      `}>
-      <section>
-        <h3 className="heading">Latest Posts</h3>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-            <h4><Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link></h4>
-            <p><span>{node.frontmatter.date}</span> - <span className="timeToRead">{node.timeToRead} min read</span></p>
-            <span>{node.excerpt}</span>
-            <hr />
-          </div>
-        ))}
-      </section>
-      </div>
-    )}
-  />
-)
+export default withStyles(styles)(List);

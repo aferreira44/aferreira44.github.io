@@ -1,3 +1,10 @@
+---
+slug: "/blog/RoR"
+date: "2017-12-23"
+title: "Como uma economia descentralizada ajuda a sociedade"
+description: "Descrição para SEO"
+---
+
 `rails new simple_cms -d mysql`
 
 `sudo apt-get install libmysqlclient-dev`

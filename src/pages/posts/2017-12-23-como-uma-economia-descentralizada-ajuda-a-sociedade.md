@@ -3,9 +3,10 @@ slug: "/blog/como-uma-economia-descentralizada-ajuda-a-sociedade"
 date: "2017-12-23"
 title: "Como uma economia descentralizada ajuda a sociedade"
 description: "Descrição para SEO"
+category: js
 ---
 
-Tal como os primeiros dias da Internet, a revolução causada pelas soluções utilizando blockchain começaram a atrair uma atenção incrível de empresários, investidores e consumidores. Com o Bitcoin subindo mais de USD $11.000, e outras moedas alternativas também com tendência de alta, o movimento das criptomoedas finalmente começa a solidificar sua utilidade e ganhar impulso viral.
+Tal como os primeiros dias da Internet, a revolução causada pelas soluções utilizando blockchain começaram a atrair uma atenção incrível de empresários, investidores e consumidores. Com o Bitcoin subindo mais de USD \$11.000, e outras moedas alternativas também com tendência de alta, o movimento das criptomoedas finalmente começa a solidificar sua utilidade e ganhar impulso viral.
 
 Embora a alta volatilidade e a natureza de alto risco e alta recompensa das moedas digitais tenha possibilitado que investidores realizem lucros inacreditáveis a curto prazo, os entusiastas da tecnologia, assim como eu, preferem as implicações de longo prazo. A próxima geração de startups será capaz de utilizar soluções em blockchain para resolver obstáculos fundamentais presentes em uma grande variedade de indústrias. Com os sistemas descentralizados, podemos transformar o mundo fundamentalmente para uma sociedade mais justa e distribuída.
 

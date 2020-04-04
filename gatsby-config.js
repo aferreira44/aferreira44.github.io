@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: 'https://andreferreira.me',
     title: 'André Ferreira',
     subtitle: 'Full Stack Developer',
-    description: 'Programming, DevOps, Blockchain, AI and Machine Learning, Startups, Open Source, GNU/Linux, Privacy and Freedom'
+    description: "I'm a software engineer creating startups and open source projects and writing about modern technologies and other things."
   },
   plugins: [
     'gatsby-plugin-react-helmet',

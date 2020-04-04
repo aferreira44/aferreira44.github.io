@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "andreferreira.me",
+  "description": "AndreFerreira.me / Personal Tech Blog",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

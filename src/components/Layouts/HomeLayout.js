@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { Row, Col, Divider } from "antd";
 import { Typography } from "antd";
 import Layout from "../Layouts/Layout";
-import PostList from "../Articles/List";
+import LatestArticles from "../Articles/LatestArticles";
 
 const { Title, Text } = Typography;
 
@@ -63,7 +63,7 @@ export default ({ children }) => (
       )}
     />
     <Divider />
-    <PostList />
+    <LatestArticles />
     {children}
   </Layout>
 );

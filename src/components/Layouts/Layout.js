@@ -1,7 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
-import { Row, Col, Divider, Layout, Typography } from "antd";
+import { Space, Row, Col, Divider, Layout, Typography } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTwitter,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
 import Menu from "../UI/Menu";
 
 import "antd/dist/antd.css";
@@ -104,9 +110,42 @@ class MainLayout extends React.Component {
             <Content>{children}</Content>
           </Row>
           <Divider />
-          <Row justify="center">
-            <Footer>Footer</Footer>
-          </Row>
+          <Footer>
+            <Row>
+              <Col span={6} />
+              <Col span={6}>
+                <Space size="middle">
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Ko-Fi
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Patreon
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Newsletter
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    RSS
+                  </Link>
+                </Space>
+              </Col>
+              <Col span={6}>
+                <nav css={{ float: "right" }}>
+                  <Space size="middle">
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </Link>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTwitter} size="2x" />
+                    </Link>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTelegram} size="2x" />
+                    </Link>
+                  </Space>
+                </nav>
+              </Col>
+            </Row>
+          </Footer>
         </Layout>
       </div>
     );

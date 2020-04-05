@@ -30,7 +30,7 @@ export default () => {
       <Row>
         <Col span={6} />
         <Col>
-          <Title level={2}>Latest Articles</Title>
+          <Title level={2}>Most Popular</Title>
         </Col>
         <Col>
           <Link to="/blog">

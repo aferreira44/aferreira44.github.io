@@ -30,12 +30,7 @@ export default () => {
       <Row>
         <Col span={6} />
         <Col>
-          <Title level={2}>Latest Articles</Title>
-        </Col>
-        <Col>
-          <Link to="/blog">
-            <Button css={{ marginLeft: "30px" }}>View All</Button>
-          </Link>
+          <Title level={2}>Open Source Projects</Title>
         </Col>
         <Col span={6} />
       </Row>

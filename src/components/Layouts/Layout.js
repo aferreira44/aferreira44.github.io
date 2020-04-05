@@ -1,7 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Layout, Typography, Button } from "antd";
-import { Row, Col, Divider } from "antd";
+import { Link } from "gatsby";
+import { Space, Row, Col, Divider, Layout, Typography } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faTwitter,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
+import Menu from "../UI/Menu";
 
 import "antd/dist/antd.css";
 
@@ -77,7 +84,12 @@ class MainLayout extends React.Component {
           />
         </Helmet>
         <Layout>
-          <Row justify="center">
+          <Row
+            css={{
+              margin: "50px 0 50px 0",
+            }}
+          >
+            <Col span={6} />
             <Col span={6}>
               <Title
                 level={2}
@@ -85,24 +97,55 @@ class MainLayout extends React.Component {
                   textAlign: "left",
                 }}
               >
-                André Ferreira
+                <Link to="/">André Ferreira</Link>
               </Title>
             </Col>
             <Col span={6}>
-              <Button>About me</Button>
-              <Button>Articles</Button>
-              <Button>Portfolio</Button>
-              <Button>Contact</Button>
+              <Menu />
             </Col>
+            <Col span={6} />
           </Row>
           <Divider />
           <Row justify="center">
             <Content>{children}</Content>
           </Row>
           <Divider />
-          <Row justify="center">
-            <Footer>Footer</Footer>
-          </Row>
+          <Footer>
+            <Row>
+              <Col span={6} />
+              <Col span={6}>
+                <Space size="middle">
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Ko-Fi
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Patreon
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    Newsletter
+                  </Link>
+                  <Link to="/" css={{ fontSize: "18px" }}>
+                    RSS
+                  </Link>
+                </Space>
+              </Col>
+              <Col span={6}>
+                <nav css={{ float: "right" }}>
+                  <Space size="middle">
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </Link>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTwitter} size="2x" />
+                    </Link>
+                    <Link to="/">
+                      <FontAwesomeIcon icon={faTelegram} size="2x" />
+                    </Link>
+                  </Space>
+                </nav>
+              </Col>
+            </Row>
+          </Footer>
         </Layout>
       </div>
     );

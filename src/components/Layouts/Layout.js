@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Layout, Typography, Button } from "antd";
-import { Row, Col, Divider } from "antd";
+import { Link } from "gatsby";
+import { Row, Col, Divider, Layout, Typography } from "antd";
+import Menu from "../UI/Menu";
 
 import "antd/dist/antd.css";
 
@@ -77,7 +78,12 @@ class MainLayout extends React.Component {
           />
         </Helmet>
         <Layout>
-          <Row justify="center">
+          <Row
+            css={{
+              margin: "50px 0 50px 0",
+            }}
+          >
+            <Col span={6} />
             <Col span={6}>
               <Title
                 level={2}
@@ -85,15 +91,13 @@ class MainLayout extends React.Component {
                   textAlign: "left",
                 }}
               >
-                André Ferreira
+                <Link to="/">André Ferreira</Link>
               </Title>
             </Col>
             <Col span={6}>
-              <Button>About me</Button>
-              <Button>Articles</Button>
-              <Button>Portfolio</Button>
-              <Button>Contact</Button>
+              <Menu />
             </Col>
+            <Col span={6} />
           </Row>
           <Divider />
           <Row justify="center">

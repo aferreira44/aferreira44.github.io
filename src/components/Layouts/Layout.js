@@ -115,32 +115,53 @@ class MainLayout extends React.Component {
               <Col span={6} />
               <Col span={6}>
                 <Space size="middle">
-                  <Link to="/" css={{ fontSize: "18px" }}>
-                    Ko-Fi
-                  </Link>
-                  <Link to="/" css={{ fontSize: "18px" }}>
+                  <a
+                    href="https://ko-fi.com/aferreira44"
+                    css={{ fontSize: "18px" }}
+                  >
+                    Ko-fi
+                  </a>
+                  <a
+                    href="https://www.patreon.com/aferreira44"
+                    css={{ fontSize: "18px" }}
+                  >
                     Patreon
-                  </Link>
-                  <Link to="/" css={{ fontSize: "18px" }}>
+                  </a>
+                  <a
+                    href="https://aferreira44.substack.com/"
+                    css={{ fontSize: "18px" }}
+                  >
                     Newsletter
-                  </Link>
-                  <Link to="/" css={{ fontSize: "18px" }}>
+                  </a>
+                  {/* <a
+                    href="https://ko-fi.com/aferreira44"
+                    css={{ fontSize: "18px" }}
+                  >
                     RSS
-                  </Link>
+                  </a> */}
                 </Space>
               </Col>
               <Col span={6}>
                 <nav css={{ float: "right" }}>
                   <Space size="middle">
-                    <Link to="/">
+                    <a
+                      href="https://github.com/aferreira44"
+                      css={{ fontSize: "18px" }}
+                    >
                       <FontAwesomeIcon icon={faGithub} size="2x" />
-                    </Link>
-                    <Link to="/">
+                    </a>
+                    <a
+                      href="https://twitter.com/aferreira44"
+                      css={{ fontSize: "18px" }}
+                    >
                       <FontAwesomeIcon icon={faTwitter} size="2x" />
-                    </Link>
-                    <Link to="/">
+                    </a>
+                    <a
+                      href="https://telegram.me/aferreira44"
+                      css={{ fontSize: "18px" }}
+                    >
                       <FontAwesomeIcon icon={faTelegram} size="2x" />
-                    </Link>
+                    </a>
                   </Space>
                 </nav>
               </Col>

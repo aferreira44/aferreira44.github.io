@@ -1,7 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Row, Col } from "antd";
+import { Typography } from "antd";
+
 import Layout from "../Layouts/Layout";
+
+const { Title, Text } = Typography;
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -10,8 +14,8 @@ export default ({ data }) => {
       <Layout>
         <Row justify="center">
           <Col span={12}>
-            <h1>{post.frontmatter.title}</h1>
-            <p>
+            <Title>{post.frontmatter.title}</Title>
+            <Text>
               <span>Published on {post.frontmatter.date}</span> -{" "}
               <span
                 css={{
@@ -20,7 +24,9 @@ export default ({ data }) => {
               >
                 Time to read: {post.timeToRead} min.
               </span>
-            </p>
+            </Text>
+            <br />
+            <br />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </Col>
         </Row>

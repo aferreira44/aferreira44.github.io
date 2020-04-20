@@ -12,7 +12,7 @@ export default () => (
       <Link to="/about">
         <Button>About me</Button>
       </Link>
-      <Link to="/blog">
+      {/* <Link to="/blog">
         <Button>Articles</Button>
       </Link>
       <Link to="/portfolio">
@@ -20,7 +20,7 @@ export default () => (
       </Link>
       <Link to="/contact">
         <Button>Contact</Button>
-      </Link>
+      </Link> */}
     </Space>
   </nav>
 );

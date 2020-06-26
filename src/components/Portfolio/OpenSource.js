@@ -8,10 +8,7 @@ const { Title } = Typography;
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
-        limit: 5
-        sort: { fields: [frontmatter___date], order: DESC }
-      ) {
+      allMdx(limit: 5, sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             id
@@ -39,7 +36,7 @@ export default () => {
         <Col>
           <List
             itemLayout="horizontal"
-            dataSource={data.allMarkdownRemark.edges}
+            dataSource={data.allMdx.edges}
             renderItem={({ node }) => (
               <div>
                 <List.Item key={node.id}>

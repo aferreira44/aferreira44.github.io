@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
-import { Row, Col, List, Typography, Button } from "antd";
+import { Row, Col, List, Typography } from "antd";
 import ImgWrapper from "../utils/ImgWrapper";
 
 const { Title } = Typography;
@@ -8,7 +8,7 @@ const { Title } = Typography;
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      allMdx(limit: 5, sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
         edges {
           node {
             id
@@ -27,13 +27,9 @@ export default () => {
       <Row>
         <Col span={6} />
         <Col>
-          <Title level={2}>Most Popular</Title>
+          <Title level={2}>Articles</Title>
         </Col>
-        <Col>
-          <Link to="/blog">
-            <Button css={{ marginLeft: "30px" }}>View All</Button>
-          </Link>
-        </Col>
+        <Col />
         <Col span={6} />
       </Row>
       <Row>

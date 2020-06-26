@@ -7,6 +7,7 @@ module.exports = {
       "I'm a software engineer creating startups and open source projects and writing about modern technologies and other things.",
   },
   plugins: [
+    "gatsby-plugin-mdx",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-transformer-remark",

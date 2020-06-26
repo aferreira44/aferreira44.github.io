@@ -1,13 +1,14 @@
-const path = require(`path`)
+const path = require(`path`);
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark {
+        allMdx {
           edges {
             node {
+              body
               frontmatter {
                 slug
               }
@@ -15,8 +16,8 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    `).then((result) => {
+      result.data.allMdx.edges.forEach(({ node }) => {
         createPage({
           path: node.frontmatter.slug,
           component: path.resolve(`./src/components/Layouts/PostLayout.js`),
@@ -25,9 +26,9 @@ exports.createPages = ({ graphql, actions }) => {
             // in page queries as GraphQL variables.
             slug: node.frontmatter.slug,
           },
-        })
-      })
-      resolve()
-    })
-  })
-}
+        });
+      });
+      resolve();
+    });
+  });
+};

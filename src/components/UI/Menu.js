@@ -9,13 +9,16 @@ export default () => (
     }}
   >
     <Space size="middle">
+      <Link to="/">
+        <Button>Home</Button>
+      </Link>
       <Link to="/about">
         <Button>About me</Button>
       </Link>
-      {/* <Link to="/blog">
+      <Link to="/blog">
         <Button>Articles</Button>
       </Link>
-      <Link to="/portfolio">
+      {/* <Link to="/portfolio">
         <Button>Portfolio</Button>
       </Link>
       <Link to="/contact">

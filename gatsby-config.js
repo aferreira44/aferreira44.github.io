@@ -4,7 +4,7 @@ module.exports = {
     title: "André Ferreira",
     subtitle: "Full Stack Developer",
     description:
-      "I'm a software engineer creating startups and open source projects and writing about modern technologies and other things.",
+      "I'm a software engineer creating startups and writing about modern technologies and other things.",
   },
   plugins: [
     "gatsby-plugin-mdx",

@@ -19,10 +19,6 @@ const { Footer, Content } = Layout;
 const { Title } = Typography;
 
 class MainLayout extends React.Component {
-  state = {
-    drawerOpened: false,
-  };
-
   componentDidMount() {
     /* Google Tag Manager */
     if (
@@ -61,10 +57,6 @@ class MainLayout extends React.Component {
     }
     /* End Google Tag Manager */
   }
-
-  toggleDrawer = () => {
-    this.setState({ drawerOpened: !this.state.drawerOpened });
-  };
 
   render() {
     const { children } = this.props;
@@ -133,12 +125,9 @@ class MainLayout extends React.Component {
                   >
                     Newsletter
                   </a>
-                  {/* <a
-                    href="https://ko-fi.com/aferreira44"
-                    css={{ fontSize: "18px" }}
-                  >
+                  <a href="#" css={{ fontSize: "18px" }}>
                     RSS
-                  </a> */}
+                  </a>
                 </Space>
               </Col>
               <Col span={6}>
@@ -165,6 +154,7 @@ class MainLayout extends React.Component {
                   </Space>
                 </nav>
               </Col>
+              <Col span={6} />
             </Row>
           </Footer>
         </Layout>
